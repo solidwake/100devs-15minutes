@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clear {
+   clear: both;
+}
+header, footer {
+    height: 230px;
+    border: 2px solid black;
+    clear: both;
+}
+section {
+    height: 505px;
+    border: 2px solid black;
+    float: left;
+    width: 33.3333%;
+}
+@media
+    (min-width: 481px)
+    and (max-width: 1000px) {
+    header, footer {
+        height: 150px;
+    }
+    .col1, .col2 {
+        height: 340px;
+        width: 50%;
+    }
+    .col3 {
+        height: 340px;
+        width: 100%;
+    }
+}
+@media
+    (min-width: 0)
+    and (max-width: 480px) {
+    header, footer {
+        height: 150px;
+    }
+    .col1, .col2, .col3 {
+        height: 340px;
+        width: 100%;
+    }
+}
